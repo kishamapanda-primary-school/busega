@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="sw" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shule ya Msingi Kishamapanda | Kujenga Kiongozi wa Kesho</title>
+    <meta name="description" content="Kujenga Kiongozi wa Kesho kupitia Uadilifu, Ubunifu, Ushirikiano, Nidhamu na Utunzaji wa Mazingira. Jiunge nasi kwa elimu bora.">
+    <meta name="keywords" content="Kishamapanda, Shule ya Msingi, Elimu, Mazingira, STEM, Shule Bora, Tanzania">
+    
+    <meta property="og:title" content="Shule ya Msingi Kishamapanda">
+    <meta property="og:description" content="Kuwa shule bora inayozalisha viongozi wa kesho wenye maarifa, maadili mema na uwajibikaji kwa mazingira.">
+    <meta property="og:image" content="https://i.ibb.co/RGShTKzt/logo-ya-shule.png">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+
+    {
+  "@context": ""https://i.ibb.co/xt32XL8K/20260612-134824.jpg"",
+  "@type": "EducationalOrganization",
+  "name": "Shule ya Msingi Kishamapanda",
+  "url": "https://kishamapanda.edu.tz",
+  "logo": "https://i.ibb.co/xt32XL8K/20260612-134824.jpg",
+  "description": "Kujenga Kiongozi wa Kesho kupitia Uadilifu, Ubunifu, Ushirikiano, Nidhamu na Utunzaji wa Mazingira.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "TZ"
+  }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B8F3A',
+                        secondary: '#FF8C00',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        }
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md border-b border-gray-100 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center space-x-3">
+                    <img class="h-14 w-auto object-contain" src="https://i.ibb.co/RGShTKzt/logo-ya-shule.png" alt="Logo ya Shule" loading="lazy">
+                    <div class="hidden md:block">
+                        <span class="text-lg font-bold text-primary block leading-none">KISHAMAPANDA</span>
+                        <span class="text-xs text-secondary font-medium tracking-wider">SHULE YA MSINGI</span>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#home" class="hover:text-primary font-medium transition duration-300">Home</a>
+                    <a href="#kuhusu" class="hover:text-primary font-medium transition duration-300">Kuhusu Shule</a>
+                    <a href="#sheria" class="hover:text-primary font-medium transition duration-300">Sheria za Shule</a>
+                    <a href="#mazingira" class="hover:text-primary font-medium transition duration-300">Mazingira</a>
+                    <a href="#viranja" class="hover:text-primary font-medium transition duration-300">Viranja</a>
+                    <a href="#klabu" class="hover:text-primary font-medium transition duration-300">Klabu</a>
+                    <a href="#gallery" class="hover:text-primary font-medium transition duration-300">Gallery</a>
+                    <a href="#mawasiliano" class="hover:text-primary font-medium transition duration-300">Mawasiliano</a>
+                    
+                    <div class="relative group">
+                        <button class="bg-secondary text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1 hover:bg-orange-600 transition">
+                            <span>QUICK LINKS</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="firestore-dropdown" class="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-xl py-2 hidden group-hover:block border border-gray-100 dark:border-gray-700">
+                            <div class="px-4 py-2 text-xs text-gray-400">Inapakia...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400">
+                        <i id="theme-toggle-icon" class="fas fa-moon text-xl"></i>
+                    </button>
+
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 px-4 pt-2 pb-6 space-y-2 max-h-[80vh] overflow-y-auto">
+            <a href="#home" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Home</a>
+            <a href="#kuhusu" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Kuhusu Shule</a>
+            <a href="#sheria" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Sheria za Shule</a>
+            <a href="#mazingira" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Mazingira</a>
+            <a href="#viranja" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Viranja</a>
+            <a href="#klabu" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Klabu</a>
+            <a href="#gallery" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium">Gallery</a>
+            <a href="#mawasiliano" class="block py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 font-medium mb-4">Mawasiliano</a>
+            
+            <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
+                <span class="text-xs font-bold text-gray-400 tracking-wider block mb-2 px-3">QUICK LINKS</span>
+                <div id="mobile-firestore-links" class="space-y-1">
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-[85vh] flex items-center bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(11, 143, 58, 0.85), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/xt32XL8K/20260612-134824.jpg');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left z-10 w-full">
+            <div class="max-w-3xl transform transition duration-700 hover:scale-[1.01]">
+                <span class="bg-secondary text-white text-xs md:text-sm font-bold tracking-widest px-4 py-1.5 rounded-full uppercase">Karibu Kishamapanda</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight drop-shadow-lg">
+                    SHULE YA MSINGI <span class="text-secondary">KISHAMAPANDA</span>
+                </h1>
+                <p class="text-lg md:text-xl font-light text-gray-100 mb-8 leading-relaxed">
+                    "Kujenga Kiongozi wa Kesho kupitia Uadilifu, Ubunifu, Ushirikiano, Nidhamu na Utunzaji wa Mazingira"
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#kuhusu" class="bg-white text-primary font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-secondary hover:text-white transition duration-300 text-center transform hover:-translate-y-1">Soma Zaidi</a>
+                    <a href="#mawasiliano" class="border-2 border-white text-white font-bold px-8 py-3.5 rounded-full hover:bg-white hover:text-primary transition duration-300 text-center transform hover:-translate-y-1">Wasiliana Nasi</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-900 to-transparent"></div>
+    </section>
+
+    <section id="kuhusu" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-green-400">Kuhusu Shule Yetu</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border-l-8 border-primary transform hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-primary text-xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Dira Yetu</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">"Kuwa shule bora inayozalisha viongozi wa kesho wenye maarifa, maadili mema, ubunifu na uwajibikaji kwa mazingira."</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border-l-8 border-secondary transform hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center text-secondary text-xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Dhima Yetu</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">"Kutoa elimu bora inayomjenga mwanafunzi kitaaluma, kijamii, kimaadili na kiuongozi."</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-center mb-10 text-gray-700 dark:text-gray-300">Tunu Zetu Kuu (Core Values)</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center group hover:bg-primary hover:text-white transition duration-300">
+                    <div class="w-14 h-14 bg-green-50 dark:bg-gray-700 text-primary group-hover:bg-white group-hover:text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner transition">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h4 class="font-bold text-lg">Uadilifu</h4>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center group hover:bg-secondary hover:text-white transition duration-300">
+                    <div class="w-14 h-14 bg-orange-50 dark:bg-gray-700 text-secondary group-hover:bg-white group-hover:text-secondary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner transition">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4 class="font-bold text-lg">Ubunifu</h4>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center group hover:bg-primary hover:text-white transition duration-300">
+                    <div class="w-14 h-14 bg-green-50 dark:bg-gray-700 text-primary group-hover:bg-white group-hover:text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner transition">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4 class="font-bold text-lg">Mazingira</h4>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center group hover:bg-secondary hover:text-white transition duration-300">
+                    <div class="w-14 h-14 bg-orange-50 dark:bg-gray-700 text-secondary group-hover:bg-white group-hover:text-secondary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner transition">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="font-bold text-lg">Ushirikiano</h4>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center group hover:bg-primary hover:text-white transition duration-300 col-span-2 lg:col-span-1 mx-auto w-full max-w-[200px] lg:max-w-none">
+                    <div class="w-14 h-14 bg-green-50 dark:bg-gray-700 text-primary group-hover:bg-white group-hover:text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl shadow-inner transition">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h4 class="font-bold text-lg">Nidhamu</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sheria" class="py-20 bg-gray-50 dark:bg-gray-800/40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Sheria na Kanuni za Shule</h2>
+                <p class="text-gray-500 mt-2">Miongozo thabiti ya kuwajenga wanafunzi katika maadili na uongozi.</p>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold flex justify-between items-center bg-gray-100 dark:bg-gray-700/50 hover:bg-gray-200/50 dark:hover:bg-gray-700 transition" onclick="toggleAccordion('acc1')">
+                        <span class="flex items-center space-x-3 text-primary dark:text-green-400"><i class="fas fa-clock"></i> <span>1. Nidhamu Binafsi na Muda</span></span>
+                        <i id="acc1-icon" class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="acc1" class="hidden p-5 border-t border-gray-100 dark:border-gray-700 space-y-2 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800">
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kuwahi shuleni kabla ya saa 1:15 Asubuhi.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kuheshimu walimu, wafanyakazi wote na wanafunzi wenzako.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kuhudhuria na kuwa makini wakati wa Mkutano Mkuu (Assembly).</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutotumia lugha chafu au matusi muda wote ukiwa shuleni.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutotoroka vipindi au eneo la shule bila kibali maalum.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold flex justify-between items-center bg-gray-100 dark:bg-gray-700/50 hover:bg-gray-200/50 dark:hover:bg-gray-700 transition" onclick="toggleAccordion('acc2')">
+                        <span class="flex items-center space-x-3 text-primary dark:text-green-400"><i class="fas fa-leaf"></i> <span>2. Utunzaji wa Mazingira</span></span>
+                        <i id="acc2-icon" class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="acc2" class="hidden p-5 border-t border-gray-100 dark:border-gray-700 space-y-2 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800">
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutotupa taka ovyo; tumia mapipa ya taka yaliyotengwa.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutunza bustani na kuepuka kukanyaga nyasi au maua vibaya.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutunza miti na kushiriki kikamilifu katika kuimwagilia maji.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutunza maji na nishati ya umeme kwa kuzima baada ya kutumia.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold flex justify-between items-center bg-gray-100 dark:bg-gray-700/50 hover:bg-gray-200/50 dark:hover:bg-gray-700 transition" onclick="toggleAccordion('acc3')">
+                        <span class="flex items-center space-x-3 text-primary dark:text-green-400"><i class="fas fa-shirt"></i> <span>3. Sare na Usafi</span></span>
+                        <i id="acc3-icon" class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="acc3" class="hidden p-5 border-t border-gray-100 dark:border-gray-700 space-y-2 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800">
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kuvaa sare rasmi ya shule iliyo safi na nadhifu kila siku.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kudumisha usafi wa mwili (nywele, kucha na meno).</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kuvaa mavazi ya michezo yaliyoidhinishwa wakati wa vipindi vya michezo.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold flex justify-between items-center bg-gray-100 dark:bg-gray-700/50 hover:bg-gray-200/50 dark:hover:bg-gray-700 transition" onclick="toggleAccordion('acc4')">
+                        <span class="flex items-center space-x-3 text-primary dark:text-green-400"><i class="fas fa-graduation-cap"></i> <span>4. Uadilifu na Taaluma</span></span>
+                        <i id="acc4-icon" class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="acc4" class="hidden p-5 border-t border-gray-100 dark:border-gray-700 space-y-2 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800">
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kutofanya udanganyifu wa aina yoyote katika mitihani au majaribio.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kulinda na kutunza mali zote za shule (vitabu, madawati, majengo).</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kusema ukweli wakati wote na kujenga sifa ya uaminifu.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-5 font-bold flex justify-between items-center bg-gray-100 dark:bg-gray-700/50 hover:bg-gray-200/50 dark:hover:bg-gray-700 transition" onclick="toggleAccordion('acc5')">
+                        <span class="flex items-center space-x-3 text-primary dark:text-green-400"><i class="fas fa-hands-holding"></i> <span>5. Ubunifu na Ushirikiano</span></span>
+                        <i id="acc5-icon" class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="acc5" class="hidden p-5 border-t border-gray-100 dark:border-gray-700 space-y-2 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800">
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kushiriki kwa ukamilifu kwenye kazi za vikundi na klabu za masomo.</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kudumisha roho ya Ubuntu (Kujali na kusaidiana na wengine).</p>
+                        <p class="flex items-center"><i class="fas fa-check text-secondary mr-2"></i> Kupinga uonevu wa aina yoyote (anti-bullying) ndani na nje ya shule.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-primary text-white p-8 rounded-2xl shadow-xl border-2 border-secondary relative overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <div class="absolute right-0 top-0 opacity-10 text-9xl transform translate-x-10 -translate-y-10"><i class="fas fa-bookmark"></i></div>
+                <h3 class="text-2xl font-bold mb-4 text-center tracking-wide text-secondary flex items-center justify-center space-x-2">
+                    <i class="fas fa-star text-white"></i> <span>AHADI YA MWANAFUNZI</span> <i class="fas fa-star text-white"></i>
+                </h3>
+                <p class="italic text-lg md:text-xl text-center leading-relaxed font-light">
+                    "Mimi kama sehemu ya familia ya Kishamapanda, naahidi:<br>
+                    Kutenda kwa <strong>Uadilifu</strong> na kujenga heshima.<br>
+                    Kutumia <strong>Ubunifu</strong> kupata ufumbuzi wa changamoto.<br>
+                    Kulinda na kutunza <strong>Mazingira</strong> kama urithi wangu.<br>
+                    Kufanya kazi kwa <strong>Ushirikiano</strong> ili kufikia uongozi bora.<br>
+                    Kudumisha <strong>Nidhamu</strong> binafsi na ya pamoja."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mazingira" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold text-sm tracking-widest block uppercase">Motto ya mazingira</span>
+                <p class="text-xl md:text-2xl font-medium italic max-w-3xl mx-auto mt-2 text-primary dark:text-green-400">
+                    "Mazingira ya kijani na safi, ndiyo chimbuko la fikra pevu na kiongozi bora."
+                </p>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-trash-can"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Udhibiti wa Taka</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Tupa kila taka kwenye pipa maalum. Usiache karatasi au plastiki chini.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-tree"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Utunzaji wa Miti</h4>
+                    <p class="text-gray-600 dark:text-gray-300">"Mti Wangu Urithi Wangu" - Kila mwanafunzi anawajibika kulinda na kumwagilia miti iliyopandwa.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-droplet"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Uhifadhi wa Maji</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Funga bomba vizuri baada ya kutumia. Zuia uvujaji wa maji shuleni.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-bolt"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Uhifadhi wa Nishati</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Zima taa na feni zote darasani pale ambapo havihitajiki au unapotoka nje.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-restroom"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Usafi wa Vyoo</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Dumisha usafi wa vyoo wakati wote kwa kutumia maji vizuri baada ya kujisaidia.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-800/50 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                    <div class="text-primary text-3xl mb-4"><i class="fas fa-soap"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kunawa Mikono</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Nawa mikono kwa sabuni na maji yanayotiririka kabla ya kula na baada ya kutoka chooni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Wajibu wa Mwanafunzi (Kiongozi wa Kesho)</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border-t-4 border-primary">
+                    <h4 class="font-bold text-lg mb-2">1. Uadilifu</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Kuwa mkweli na mwaminifu katika kila jambo ndani ya jamii yetu.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border-t-4 border-secondary">
+                    <h4 class="font-bold text-lg mb-2">2. Ubunifu na Udadisi</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Kutafuta maarifa mapya na kufikiri nje ya mipaka ya kawaida.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border-t-4 border-primary">
+                    <h4 class="font-bold text-lg mb-2">3. Uwajibikaji wa Mazingira</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Kutambua kuwa usafi na uhifadhi wa mazingira huanza na mimi.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border-t-4 border-secondary">
+                    <h4 class="font-bold text-lg mb-2">4. Ushirikiano (Ubuntu)</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Kufanya kazi kwa pamoja na kuwasaidia wengine kufikia malengo yao.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center border-t-4 border-primary col-span-full md:col-span-1 lg:col-span-1">
+                    <h4 class="font-bold text-lg mb-2">5. Nidhamu ya Kujiongoza</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Kusimamia ratiba zako na tabia zako bila kusukumwa na mtu.</p>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto text-center bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-inner">
+                <p class="text-lg italic font-medium text-gray-600 dark:text-gray-300">
+                    "Uongozi unaanza na wewe. Timiza wajibu wako leo ili uongeze kesho yako."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="viranja" class="py-20 bg-gray-50 dark:bg-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Majukumu ya Viranja</h2>
+                <p class="text-gray-500 mt-2">Viongozi wetu wanaosimamia nidhamu, mazingira na maendeleo ya shule kila siku.</p>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-user-tie"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kiranja Mkuu</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Kiongozi mkuu wa wanafunzi wote, kiunganishi kati ya wanafunzi na uongozi wa shule, na msimamizi mkuu wa amani.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-leaf"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kiranja wa Mazingira</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Msimamizi mkuu wa usafi wa shule, bustani, upandaji wa miti na utupaji sahihi wa taka zote shuleni.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-book-open"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kiranja wa Taaluma</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Kuhakikisha utulivu wakati wa vipindi, kusaidia uratibu wa maktaba na kuhamasisha wanafunzi kujisomea.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-hourglass-half"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kiranja wa Muda</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Mlinzi wa muda wa shule, anahakikisha kengele inagongwa kwa usahihi na ratiba zote zinafuatwa bila kuchelewa.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-volleyball"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Kiranja wa Michezo</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Kuratibu vifaa vya michezo, kusimamia mazoezi na kusaidia walimu katika kuandaa mashindano ya michezo.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-b-4 border-primary hover:shadow-xl transition">
+                    <div class="text-secondary text-2xl mb-3"><i class="fas fa-users-rectangle"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Viranja wa Madarasa</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Viongozi wa ngazi ya darasa wanaohakikisha usafi, mahudhurio bora, na utulivu wa darasa lao husika.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="klabu" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Klabu za Masomo</h2>
+                <p class="text-xl italic text-gray-500 mt-2">"Maarifa nje ya darasa, chimbuko la ufumbuzi wa kesho."</p>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <div class="bg-green-50/50 dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl mb-4 shadow"><i class="fas fa-seedling"></i></div>
+                    <h4 class="font-bold text-xl mb-2 text-primary dark:text-green-400">Eco-Green Club</h4>
+                    <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Kupanda miti shuleni</li>
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Recycling (Urejelezaji taka)</li>
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Elimu ya Mabadiliko ya tabianchi</li>
+                    </ul>
+                </div>
+                <div class="bg-orange-50/50 dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center text-xl mb-4 shadow"><i class="fas fa-flask"></i></div>
+                    <h4 class="font-bold text-xl mb-2 text-secondary">STEM Club</h4>
+                    <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Majaribio ya Sayansi</li>
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Teknolojia rahisi</li>
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Hisabati kwa vitendo</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50/50 dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl mb-4 shadow"><i class="fas fa-comments"></i></div>
+                    <h4 class="font-bold text-xl mb-2 text-primary dark:text-green-400">Debate & Languages</h4>
+                    <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Midahalo ya kujenga kujiamini</li>
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Mashindano ya Spelling Bee</li>
+                        <li><i class="fas fa-circle-check text-secondary text-xs mr-1"></i> Uandishi wa Insha na mashairi</li>
+                    </ul>
+                </div>
+                <div class="bg-orange-50/50 dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center text-xl mb-4 shadow"><i class="fas fa-masks-theater"></i></div>
+                    <h4 class="font-bold text-xl mb-2 text-secondary">Talent & Culture</h4>
+                    <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Ngoma za asili na Utamaduni</li>
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Drama na Sanaa za Maonyesho</li>
+                        <li><i class="fas fa-circle-check text-primary text-xs mr-1"></i> Uchoraji na Michezo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto mb-16">
+                <h3 class="text-2xl font-bold text-center mb-10 text-gray-700 dark:text-gray-200">Muundo wa Uongozi wa Klabu</h3>
+                <div class="relative border-l-4 border-primary dark:border-green-600 ml-4 md:ml-32">
+                    <div class="mb-10 ml-6 relative">
+                        <div class="absolute -left-[34px] top-0 w-6 h-6 rounded-full bg-secondary border-4 border-white dark:border-gray-900"></div>
+                        <h5 class="font-bold text-lg text-primary dark:text-green-400">Mlezi wa Klabu (Patron/Matron)</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Mwalimu anayesimamia na kutoa muongozo mkuu wa utendaji wa klabu.</p>
+                    </div>
+                    <div class="mb-10 ml-6 relative">
+                        <div class="absolute -left-[34px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-white dark:border-gray-900"></div>
+                        <h5 class="font-bold text-lg text-secondary">Mwenyekiti</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Mwanafunzi anayeongoza vikao na kuhamasisha wanachama wote wa klabu.</p>
+                    </div>
+                    <div class="mb-10 ml-6 relative">
+                        <div class="absolute -left-[34px] top-0 w-6 h-6 rounded-full bg-secondary border-4 border-white dark:border-gray-900"></div>
+                        <h5 class="font-bold text-lg text-primary dark:text-green-400">Katibu</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Kuweka kumbukumbu zote za klabu, mahudhurio na kuandaa ripoti za shughuli.</p>
+                    </div>
+                    <div class="ml-6 relative">
+                        <div class="absolute -left-[34px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-white dark:border-gray-900"></div>
+                        <h5 class="font-bold text-lg text-secondary">Mweka Hazina</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Kutunza na kusimamia vifaa au rasilimali zote zinazomilikiwa na klabu husika.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-4 flex items-center space-x-2 text-primary dark:text-green-400">
+                        <i class="fas fa-calendar-days"></i> <span>Ratiba ya Klabu</span>
+                    </h3>
+                    <div class="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-800 shadow-md">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-primary text-white">
+                                    <th class="p-4 font-bold">Siku</th>
+                                    <th class="p-4 font-bold">Muda</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 dark:divide-gray-800 bg-white dark:bg-gray-800">
+                                <tr>
+                                    <td class="p-4 font-medium">Ijumaa (Siku ya Klabu)</td>
+                                    <td class="p-4 text-gray-600 dark:text-gray-300">8:30 Mchana - 9:30 Alasiri</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-xl mb-4 flex items-center space-x-2 text-secondary">
+                        <i class="fas fa-trophy"></i> <span>Matokeo na Tuzo</span>
+                    </h3>
+                    <div class="bg-gradient-to-r from-orange-50 to-white dark:from-gray-800 dark:to-gray-800/60 p-5 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 space-y-4">
+                        <div>
+                            <h5 class="font-bold text-base text-gray-800 dark:text-gray-200">Maonyesho ya Mwaka:</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Wanafunzi huonyesha miradi na ubunifu wao mbele ya wazazi na walimu mwisho wa mwaka.</p>
+                        </div>
+                        <div class="border-t border-gray-100 dark:border-gray-700 pt-3">
+                            <h5 class="font-bold text-base text-gray-800 dark:text-gray-200">Tuzo ya Klabu Bora:</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Klabu inayofanya vizuri zaidi hupata Cheti na zawadi maalum ya shule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 gradient-bg border-t border-gray-100 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary dark:text-green-400 flex items-center space-x-2">
+                        <i class="fas fa-newspaper"></i> <span>School News & Updates</span>
+                    </h3>
+                    <div id="firestore-news" class="grid md:grid-cols-2 gap-6">
+                        <div class="col-span-full text-center py-8 text-gray-400">Inapakia habari za shule...</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-secondary flex items-center space-x-2">
+                        <i class="fas fa-cloud-arrow-down"></i> <span>Download Center</span>
+                    </h3>
+                    <div id="firestore-downloads" class="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md divide-y divide-gray-100 dark:divide-gray-700">
+                        <div class="text-center py-6 text-gray-400">Inapakia fomu na faili...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-50 dark:bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Gallery (Picha za Shule)</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="overflow-hidden rounded-xl h-48 bg-gray-200 relative group shadow">
+                    <img class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://i.ibb.co/r2vbyyty/20260612-134847.jpg" alt="Madarasa" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-end p-3 transition duration-300"><span class="text-white text-xs font-medium">Madarasa</span></div>
+                </div>
+                <div class="overflow-hidden rounded-xl h-48 bg-gray-200 relative group shadow">
+                    <img class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://i.ibb.co/xt32XL8K/20260612-134824.jpg" alt="Madarasa ya Awali" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-end p-3 transition duration-300"><span class="text-white text-xs font-medium">Madarasa ya Awali</span></div>
+                </div>
+                <div class="overflow-hidden rounded-xl h-48 bg-gray-200 relative group shadow">
+                    <img class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://i.ibb.co/gbhh00G9/20260612-134918.jpg" alt="Michezo" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-end p-3 transition duration-300"><span class="text-white text-xs font-medium">Jengo la Utawala</span></div>
+                </div>
+                <div class="overflow-hidden rounded-xl h-48 bg-gray-200 relative group shadow">
+                    <img class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://i.ibb.co/r2vbyyty/20260612-134847.jpg" alt="Klabu" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-end p-3 transition duration-300"><span class="text-white text-xs font-medium">Madarasa</span></div>
+                </div>
+                <div class="overflow-hidden rounded-xl h-48 bg-gray-200 relative group shadow col-span-2 md:col-span-1">
+                    <img class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=500&q=80" alt="Bustani" loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-end p-3 transition duration-300"><span class="text-white text-xs font-medium">Bustani ya Shule</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mawasiliano" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary dark:text-green-400">Wasiliana Nasi</h2>
+                <p class="text-gray-500 mt-2">Tuma maoni, swali au ujumbe wowote kwenda uongozi wa shule.</p>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-50/50 to-white dark:from-gray-800 dark:to-gray-800 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Jina Kamili</label>
+                            <input type="text" id="contact-name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Namba ya Simu</label>
+                            <input type="tel" id="contact-phone" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5">Barua Pepe (Email)</label>
+                        <input type="email" id="contact-email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1.5">Ujumbe Wako</label>
+                        <textarea id="contact-message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary transition"></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3.5 px-6 rounded-xl transition duration-300 shadow-md flex items-center justify-center space-x-2">
+                        <i class="fas fa-paper-plane"></i> <span>Tuma Ujumbe Sasa</span>
+                    </button>
+                    <p id="form-status" class="text-center text-sm font-medium hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img class="h-12 w-auto object-contain bg-white p-1 rounded-lg" src="https://i.ibb.co/RGShTKzt/logo-ya-shule.png" alt="Logo">
+                    <div>
+                        <span class="text-white font-bold text-base block">KISHAMAPANDA</span>
+                        <span class="text-xs text-secondary tracking-wider">SHULE YA MSINGI</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    Dira yetu ni kuwa shule bora inayozalisha viongozi wa kesho wenye maarifa, maadili mema na uwajibikaji mkubwa kwa mazingira yanayowazunguka.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 tracking-wide uppercase">Kurasa Maalum</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#home" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Home</a>
+                    <a href="#kuhusu" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Kuhusu</a>
+                    <a href="#sheria" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Sheria</a>
+                    <a href="#mazingira" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Mazingira</a>
+                    <a href="#viranja" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Viranja</a>
+                    <a href="#klabu" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Klabu</a>
+                    <a href="#gallery" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Picha</a>
+                    <a href="#mawasiliano" class="hover:text-white transition"><i class="fas fa-angle-right mr-1"></i> Mawasiliano</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 tracking-wide uppercase">Mawasiliano Nje</h4>
+                <p class="text-sm mb-4"><i class="fas fa-envelope mr-2 text-secondary"></i> info@kishamapanda.edu.tz</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-gray-400 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 text-center text-xs tracking-wider">
+            <p>&copy; 2026 Shule ya Msingi Kishamapanda. Haki zote zimehifadhiwa. Imetengenezwa na Aloyce J Aloyce . 0757 344 860</p>
+        </div>
+    </footer>
+
+    <button id="scroll-top-btn" class="fixed bottom-6 right-6 z-40 bg-secondary text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none hover:bg-orange-600 transform hover:scale-110 transition duration-300">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+
+    <script type="module">
+        // Import Firebase SDK v12.14.0 kama ulivyoomba
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, where } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+
+        // Firebase Configuration yako
+        const firebaseConfig = {
+          apiKey: "AIzaSyBKwWx4Ng3GvfoCTxRaEKf38xy9ETCKWBc",
+          authDomain: "aloyce-e23ae.firebaseapp.com",
+          projectId: "aloyce-e23ae",
+          storageBucket: "aloyce-e23ae.firebasestorage.app",
+          messagingSenderId: "559566945061",
+          appId: "1:559566945061:web:29f42022987b0daf91f8cc",
+          measurementId: "G-6S0FSWR4EB"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+
+        // --- 1. DYNAMIC NAVBAR (QUICK LINKS DROPDOWN via REAL-TIME) ---
+        const dropdownDesktop = document.getElementById('firestore-dropdown');
+        const dropdownMobile = document.getElementById('mobile-firestore-links');
+
+        const navQuery = query(collection(db, "navbar_links"), where("active", "==", true), orderBy("order", "asc"));
+        onSnapshot(navQuery, (snapshot) => {
+            let desktopHtml = '';
+            let mobileHtml = '';
+            
+            if (snapshot.empty) {
+                desktopHtml = '<div class="px-4 py-2 text-xs text-gray-400">Hakuna links kwa sasa</div>';
+                mobileHtml = '<div class="px-3 py-1 text-xs text-gray-400">Hakuna links kwa sasa</div>';
+            } else {
+                snapshot.forEach((doc) => {
+                    const link = doc.data();
+                    desktopHtml += `<a href="${link.url}" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary transition">${link.title}</a>`;
+                    mobileHtml += `<a href="${link.url}" class="block py-1.5 px-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-sm font-medium text-gray-600 dark:text-gray-300">${link.title}</a>`;
+                });
+            }
+            dropdownDesktop.innerHTML = desktopHtml;
+            dropdownMobile.innerHTML = mobileHtml;
+        }, (error) => {
+            console.error("Error fetching navbar links: ", error);
+        });
+
+        // --- 2. DYNAMIC NEWS SECTION (REAL-TIME) ---
+        const newsContainer = document.getElementById('firestore-news');
+        const newsQuery = query(collection(db, "news"), orderBy("createdAt", "desc"));
+        
+        onSnapshot(newsQuery, (snapshot) => {
+            let newsHtml = '';
+            if (snapshot.empty) {
+                newsHtml = '<div class="col-span-full text-center py-8 text-gray-400 bg-white dark:bg-gray-800 rounded-xl shadow-sm">Hakuna habari mpya zilizowekwa kwa sasa.</div>';
+            } else {
+                snapshot.forEach((doc) => {
+                    const post = doc.data();
+                    // Kupata tarehe nzuri
+                    let rawDate = post.createdAt;
+                    let displayDate = "Hivi Karibuni";
+                    if(rawDate) {
+                        const d = rawDate.seconds ? new Date(rawDate.seconds * 1000) : new Date(rawDate);
+                        displayDate = d.toLocaleDateString('sw-TZ', { year: 'numeric', month: 'long', day: 'numeric' });
+                    }
+                    
+                    newsHtml += `
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition duration-300">
+                            <div class="h-44 bg-gray-200 overflow-hidden relative">
+                                <img class="w-full h-full object-cover" src="${post.image || 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80'}" alt="${post.title}" loading="lazy">
+                                <span class="absolute top-3 left-3 bg-primary text-white text-xs px-2.5 py-1 rounded-md font-medium shadow-md">${displayDate}</span>
+                            </div>
+                            <div class="p-5 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2 line-clamp-2">${post.title}</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-3 mb-4">${post.summary || ''}</p>
+                                </div>
+                                <button class="text-primary dark:text-green-400 text-sm font-semibold hover:text-secondary inline-flex items-center space-x-1 mt-auto self-start">
+                                    <span>Soma Zaidi</span> <i class="fas fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            newsContainer.innerHTML = newsHtml;
+        });
+
+        // --- 3. DYNAMIC DOWNLOAD CENTER (REAL-TIME) ---
+        const downloadsContainer = document.getElementById('firestore-downloads');
+        onSnapshot(query(collection(db, "downloads")), (snapshot) => {
+            let dlHtml = '';
+            if(snapshot.empty) {
+                dlHtml = '<div class="text-center py-6 text-gray-400">Hakuna fomu au faili za kupakua kwa sasa.</div>';
+            } else {
+                snapshot.forEach((doc) => {
+                    const docData = doc.data();
+                    dlHtml += `
+                        <div class="py-3 flex items-center justify-between group">
+                            <div class="flex items-center space-x-3 truncate">
+                                <div class="text-red-500 text-xl"><i class="fas fa-file-pdf"></i></div>
+                                <span class="font-medium text-sm text-gray-700 dark:text-gray-200 truncate">${docData.title}</span>
+                            </div>
+                            <a href="${docData.fileUrl}" target="_blank" rel="noopener noreferrer" class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 p-2 rounded-lg hover:bg-secondary hover:text-white transition">
+                                <i class="fas fa-download text-xs"></i>
+                            </a>
+                        </div>
+                    `;
+                });
+            }
+            downloadsContainer.innerHTML = dlHtml;
+        });
+
+        // --- 4. CONTACT MESSAGES (SAVE TO FIRESTORE) ---
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Badilisha muonekano wakati unatuma
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fas fa-spinner animate-spin"></i> <span>Inatuma ujumbe...</span>`;
+            
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const email = document.getElementById('contact-email').value;
+            const message = document.getElementById('contact-message').value;
+
+            try {
+                await addDoc(collection(db, "contact_messages"), {
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    message: message,
+                    timestamp: new Date()
+                });
+                
+                // Success Response
+                formStatus.className = "text-center text-sm font-medium text-green-600 dark:text-green-400 mt-4";
+                formStatus.innerText = "Ujumbe wako umepokelewa kwa ufanisi! Tutawasiliana nawe hivi karibuni.";
+                formStatus.classList.remove('hidden');
+                contactForm.reset();
+            } catch (error) {
+                console.error("Error inserting message: ", error);
+                formStatus.className = "text-center text-sm font-medium text-red-600 dark:text-red-400 mt-4";
+                formStatus.innerText = "Kuna tatizo limejitokeza. Tafadhali jaribu tena baadae.";
+                formStatus.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<i class="fas fa-paper-plane"></i> <span>Tuma Ujumbe Sasa</span>`;
+                setTimeout(() => formStatus.classList.add('hidden'), 6000);
+            }
+        });
+    </script>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if(mobileMenu.classList.contains('hidden')) {
+                icon.className = 'fas fa-bars text-2xl';
+            } else {
+                icon.className = 'fas fa-xmark text-2xl';
+            }
+        });
+
+        // Funga mobile menu ukibofya link yoyote
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.querySelector('i').className = 'fas fa-bars text-2xl';
+            });
+        });
+
+        // Dark Mode Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleIcon.className = 'fas fa-sun text-xl';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleIcon.className = 'fas fa-moon text-xl';
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeToggleIcon.className = 'fas fa-moon text-xl';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeToggleIcon.className = 'fas fa-sun text-xl';
+            }
+        });
+
+        // Accordion functionality for School Rules
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            
+            // Funga ma-accordion mengine yote kwa muonekano mzuri (Single open style)
+            const allAccordions = ['acc1', 'acc2', 'acc3', 'acc4', 'acc5'];
+            allAccordions.forEach(accId => {
+                if(accId !== id) {
+                    document.getElementById(accId).classList.add('hidden');
+                    document.getElementById(accId + '-icon').classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle ile iliyobonyezwa
+            element.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Scroll to Top Button Visibility
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
